@@ -1,0 +1,26 @@
+{
+  "name": "task-tracker",
+  "main": "dist/index.js",
+  "version": "0.0.1",
+  "repository": "https://github.com/NooBat/task-tracker",
+  "author": "NooBat (Daniel Nguyen)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc -outDir dist",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "bin": {
+    "task-cli": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
